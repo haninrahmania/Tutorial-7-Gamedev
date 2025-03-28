@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxfjl31fo2dmm"]
+
+[ext_resource type="PackedScene" uid="uid://beckfdlax4ixt" path="res://scenes/world_1.tscn" id="1_nom64"]
+[ext_resource type="PackedScene" uid="uid://5bf5mavciw7v" path="res://scenes/Player.tscn" id="2_0c5gy"]
+[ext_resource type="PackedScene" uid="uid://dwgo6xphxbt35" path="res://scenes/Goal.tscn" id="3_rffjb"]
+[ext_resource type="PackedScene" uid="uid://ccr8mtnrfvrd7" path="res://scenes/Death.tscn" id="4_iklju"]
+[ext_resource type="PackedScene" uid="uid://cuivhrjkcq8tt" path="res://scenes/Item.tscn" id="5_jkxof"]
+
+[node name="Level1" type="Node3D"]
+
+[node name="World 1" parent="." instance=ExtResource("1_nom64")]
+
+[node name="Player" parent="." instance=ExtResource("2_0c5gy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3147, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+omni_range = 8.70747
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0385, 0, 0)
+omni_range = 8.70747
+
+[node name="Goal" parent="." instance=ExtResource("3_rffjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5961, -2.00177, 0)
+
+[node name="Death" parent="." instance=ExtResource("4_iklju")]
+transform = Transform3D(7.44196, 0, 0, 0, 0.65611, 0, 0, 0, 3.9702, 10.5226, -6.06445, -0.0379639)
+
+[node name="Item" parent="." instance=ExtResource("5_jkxof")]
+transform = Transform3D(0.824935, -0.0509755, 0, -0.00523016, -0.0846396, 0.822147, -0.0507065, -0.820582, -0.0848011, -1.64777, -2.33594, -0.644043)
