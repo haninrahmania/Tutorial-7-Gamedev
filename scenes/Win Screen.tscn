@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx56dc85uggjy"]
+
+[ext_resource type="Texture2D" uid="uid://bw437tiyy1yvc" path="res://assets/cat_win.jpg" id="1_wphkj"]
+
+[node name="WinScreen" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(599, 326)
+scale = Vector2(2.20968, 2.12562)
+texture = ExtResource("1_wphkj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 485.0
+offset_right = 852.0
+offset_bottom = 622.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "YOU WIN!!!"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 24.0
+offset_right = 868.0
+offset_bottom = 161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "YOU DID IT!!!"
